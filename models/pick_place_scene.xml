@@ -1,0 +1,128 @@
+<mujoco model="franka panda pick and place">
+  <include file="../assets/franka_emika_panda/panda.xml"/>
+
+  <!-- Resolve Panda mesh files from this top-level scene file. -->
+  <compiler meshdir="../assets/franka_emika_panda/assets"/>
+
+  <option timestep="0.002" gravity="0 0 -9.81"/>
+
+  <statistic center="0.4 0 0.35" extent="1.2"/>
+
+  <visual>
+    <headlight diffuse="0.7 0.7 0.7" ambient="0.25 0.25 0.25" specular="0.2 0.2 0.2"/>
+    <rgba haze="0.15 0.25 0.35 1"/>
+    <global azimuth="135" elevation="-25"/>
+  </visual>
+
+  <asset>
+    <texture
+      name="skybox"
+      type="skybox"
+      builtin="gradient"
+      rgb1="0.32 0.45 0.58"
+      rgb2="0.04 0.06 0.08"
+      width="512"
+      height="3072"
+    />
+    <texture
+      name="floor_texture"
+      type="2d"
+      builtin="checker"
+      rgb1="0.18 0.20 0.22"
+      rgb2="0.12 0.14 0.16"
+      width="256"
+      height="256"
+    />
+    <material
+      name="floor_material"
+      texture="floor_texture"
+      texrepeat="4 4"
+      texuniform="true"
+      reflectance="0.05"
+    />
+    <material name="table_material" rgba="0.55 0.38 0.22 1"/>
+    <material name="cube_material" rgba="0.10 0.45 0.90 1"/>
+  </asset>
+
+  <worldbody>
+    <light name="key_light" pos="0.3 -0.4 1.8" dir="0.1 0.2 -1" directional="true"/>
+    <light name="fill_light" pos="0.8 0.7 1.2" diffuse="0.35 0.35 0.35"/>
+
+    <camera
+      name="overview"
+      pos="1.45 -1.35 1.10"
+      xyaxes="0.68 0.73 0 -0.36 0.34 0.87"
+      fovy="45"
+    />
+
+    <geom
+      name="floor"
+      type="plane"
+      pos="0 0 -0.65"
+      size="2 2 0.05"
+      material="floor_material"
+      contype="0"
+      conaffinity="0"
+    />
+
+    <!--
+      The tabletop surface is z=0. Panda is mounted at the world origin.
+      Collision mask 2 prevents table/robot contact while still allowing the
+      cube (mask 3) to collide with both the table and the gripper.
+    -->
+    <body name="table" pos="0.40 0 -0.025">
+      <geom
+        name="tabletop"
+        type="box"
+        size="0.70 0.60 0.025"
+        material="table_material"
+        friction="1.0 0.01 0.001"
+        contype="2"
+        conaffinity="2"
+      />
+      <geom name="table_leg_front_left" type="box" pos="0.58 -0.48 -0.30" size="0.04 0.04 0.30" material="table_material" contype="0" conaffinity="0"/>
+      <geom name="table_leg_front_right" type="box" pos="0.58 0.48 -0.30" size="0.04 0.04 0.30" material="table_material" contype="0" conaffinity="0"/>
+      <geom name="table_leg_back_left" type="box" pos="-0.58 -0.48 -0.30" size="0.04 0.04 0.30" material="table_material" contype="0" conaffinity="0"/>
+      <geom name="table_leg_back_right" type="box" pos="-0.58 0.48 -0.30" size="0.04 0.04 0.30" material="table_material" contype="0" conaffinity="0"/>
+    </body>
+
+    <body name="cube" pos="0.45 0.10 0.026">
+      <freejoint name="cube_joint"/>
+      <geom
+        name="cube_geom"
+        type="box"
+        size="0.025 0.025 0.025"
+        material="cube_material"
+        mass="0.10"
+        condim="4"
+        friction="1.0 0.01 0.001"
+        contype="3"
+        conaffinity="3"
+        solref="0.01 1"
+      />
+      <site name="cube_center" type="sphere" size="0.004" rgba="1 1 1 0"/>
+    </body>
+
+    <!-- A site is visual and non-colliding, and its world position is easy to read. -->
+    <site
+      name="target"
+      type="cylinder"
+      pos="0.45 -0.20 0.003"
+      size="0.055 0.002"
+      rgba="0.10 0.90 0.25 0.55"
+    />
+  </worldbody>
+
+  <!--
+    Full reset state for this scene: 7 arm joints, 2 finger joints, then the
+    cube freejoint position and quaternion. Use this keyframe instead of the
+    robot-only `home` keyframe inherited from panda.xml.
+  -->
+  <keyframe>
+    <key
+      name="scene_home"
+      qpos="0 0 0 -1.57079 0 1.57079 -0.7853 0.04 0.04 0.45 0.10 0.026 1 0 0 0"
+      ctrl="0 0 0 -1.57079 0 1.57079 -0.7853 255"
+    />
+  </keyframe>
+</mujoco>

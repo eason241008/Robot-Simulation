@@ -1,0 +1,449 @@
+{
+  "seed": 42,
+  "episodes": 20,
+  "success_count": 20,
+  "failure_count": 0,
+  "success_rate_percent": 100.0,
+  "records": [
+    {
+      "episode": 1,
+      "success": true,
+      "cube_initial_position": [
+        0.4547912097111927,
+        0.12144298156528732,
+        0.026
+      ],
+      "target_position": [
+        0.5002037087875936,
+        -0.11447375476931448,
+        0.003
+      ],
+      "cube_final_position": [
+        0.49548021964067746,
+        -0.1120735618502127,
+        0.024959095250994136
+      ],
+      "final_xy_error": 0.00529832763897635,
+      "simulation_time": 8.007999999999344,
+      "failure_reason": null
+    },
+    {
+      "episode": 2,
+      "success": true,
+      "cube_initial_position": [
+        0.3188354695775299,
+        0.19658712922914584,
+        0.026
+      ],
+      "target_position": [
+        0.48655955827864944,
+        -0.09850842505014831,
+        0.003
+      ],
+      "cube_final_position": [
+        0.4820381407052274,
+        -0.0950348463272114,
+        0.024959095250994132
+      ],
+      "final_xy_error": 0.005701663443039219,
+      "simulation_time": 9.191999999999739,
+      "failure_reason": null
+    },
+    {
+      "episode": 3,
+      "success": true,
+      "cube_initial_position": [
+        0.32562272653510915,
+        0.1230540313053794,
+        0.026
+      ],
+      "target_position": [
+        0.4319117233925614,
+        -0.07318230200725168,
+        0.003
+      ],
+      "cube_final_position": [
+        0.4280731234984539,
+        -0.0701353938835814,
+        0.024959095250994105
+      ],
+      "final_xy_error": 0.004900867092783689,
+      "simulation_time": 9.543999999999857,
+      "failure_reason": null
+    },
+    {
+      "episode": 4,
+      "success": true,
+      "cube_initial_position": [
+        0.42877302401613293,
+        0.17518662585791622,
+        0.026
+      ],
+      "target_position": [
+        0.44207798783582636,
+        -0.19909703007874016,
+        0.003
+      ],
+      "cube_final_position": [
+        0.4383981018147922,
+        -0.19494341576107255,
+        0.02495909525099418
+      ],
+      "final_xy_error": 0.005549240761377711,
+      "simulation_time": 8.421999999999482,
+      "failure_reason": null
+    },
+    {
+      "episode": 5,
+      "success": true,
+      "cube_initial_position": [
+        0.41091695740316697,
+        0.06893441585458454,
+        0.026
+      ],
+      "target_position": [
+        0.4958683640789615,
+        -0.12630040815802834,
+        0.003
+      ],
+      "cube_final_position": [
+        0.4912560904016335,
+        -0.12370336878958081,
+        0.02495909525099415
+      ],
+      "final_xy_error": 0.005293173146217621,
+      "simulation_time": 8.543999999999523,
+      "failure_reason": null
+    },
+    {
+      "episode": 6,
+      "success": true,
+      "cube_initial_position": [
+        0.45161754801707477,
+        0.10963363553818158,
+        0.026
+      ],
+      "target_position": [
+        0.5158977234152865,
+        -0.07923819816200442,
+        0.003
+      ],
+      "cube_final_position": [
+        0.5106135360710534,
+        -0.07757221721091806,
+        0.024959095250994132
+      ],
+      "final_xy_error": 0.005540589176101733,
+      "simulation_time": 7.995999999999341,
+      "failure_reason": null
+    },
+    {
+      "episode": 7,
+      "success": true,
+      "cube_initial_position": [
+        0.45567669941475236,
+        0.08724941909927546,
+        0.026
+      ],
+      "target_position": [
+        0.4453409405217848,
+        -0.2321153221582988,
+        0.003
+      ],
+      "cube_final_position": [
+        0.44186414190575146,
+        -0.22817744225231174,
+        0.02495909525099412
+      ],
+      "final_xy_error": 0.005253096874266461,
+      "simulation_time": 8.225999999999416,
+      "failure_reason": null
+    },
+    {
+      "episode": 8,
+      "success": true,
+      "cube_initial_position": [
+        0.33085789841350954,
+        0.15562685345394367,
+        0.026
+      ],
+      "target_position": [
+        0.4842667018270944,
+        -0.0658482481618422,
+        0.003
+      ],
+      "cube_final_position": [
+        0.4798008452723456,
+        -0.06286993454859868,
+        0.024959095250994177
+      ],
+      "final_xy_error": 0.00536788848118368,
+      "simulation_time": 9.171999999999732,
+      "failure_reason": null
+    },
+    {
+      "episode": 9,
+      "success": true,
+      "cube_initial_position": [
+        0.3651650716276304,
+        0.11186435884488165,
+        0.026
+      ],
+      "target_position": [
+        0.44573781357861314,
+        -0.20589515536482855,
+        0.003
+      ],
+      "cube_final_position": [
+        0.4427928960219228,
+        -0.20086639920357732,
+        0.02495909525099414
+      ],
+      "final_xy_error": 0.005827600530666569,
+      "simulation_time": 9.029999999999685,
+      "failure_reason": null
+    },
+    {
+      "episode": 10,
+      "success": true,
+      "cube_initial_position": [
+        0.3259843010670943,
+        0.12659868967163074,
+        0.026
+      ],
+      "target_position": [
+        0.41176730886712376,
+        -0.11943348095714813,
+        0.003
+      ],
+      "cube_final_position": [
+        0.4091088700944292,
+        -0.11531970106326307,
+        0.024959095250994177
+      ],
+      "final_xy_error": 0.004898007934201285,
+      "simulation_time": 9.669999999999899,
+      "failure_reason": null
+    },
+    {
+      "episode": 11,
+      "success": true,
+      "cube_initial_position": [
+        0.38743038377446615,
+        0.17657494744809726,
+        0.026
+      ],
+      "target_position": [
+        0.4780371142803149,
+        -0.1837740045512326,
+        0.003
+      ],
+      "cube_final_position": [
+        0.47434649275291446,
+        -0.17914468395518027,
+        0.024959095250994164
+      ],
+      "final_xy_error": 0.005920413536193742,
+      "simulation_time": 8.647999999999557,
+      "failure_reason": null
+    },
+    {
+      "episode": 12,
+      "success": true,
+      "cube_initial_position": [
+        0.46645196027904023,
+        0.17266701004955226,
+        0.026
+      ],
+      "target_position": [
+        0.43424697306422444,
+        -0.18810094129255606,
+        0.003
+      ],
+      "cube_final_position": [
+        0.4305687603249055,
+        -0.1845640913466732,
+        0.024959095250994153
+      ],
+      "final_xy_error": 0.005102798888392504,
+      "simulation_time": 8.347999999999457,
+      "failure_reason": null
+    },
+    {
+      "episode": 13,
+      "success": true,
+      "cube_initial_position": [
+        0.4364991007949951,
+        0.07956534770530338,
+        0.026
+      ],
+      "target_position": [
+        0.40798714834651517,
+        -0.238674791444819,
+        0.003
+      ],
+      "cube_final_position": [
+        0.40530906455221793,
+        -0.23478192455882418,
+        0.024959095250994167
+      ],
+      "final_xy_error": 0.004725097395964717,
+      "simulation_time": 8.607999999999544,
+      "failure_reason": null
+    },
+    {
+      "episode": 14,
+      "success": true,
+      "cube_initial_position": [
+        0.45738487550042767,
+        0.1530791199228845,
+        0.026
+      ],
+      "target_position": [
+        0.4787231530076869,
+        -0.09946877441604576,
+        0.003
+      ],
+      "cube_final_position": [
+        0.4743626597702733,
+        -0.09731869631424987,
+        0.024959095250994115
+      ],
+      "final_xy_error": 0.0048617627582341,
+      "simulation_time": 8.02599999999935,
+      "failure_reason": null
+    },
+    {
+      "episode": 15,
+      "success": true,
+      "cube_initial_position": [
+        0.391783155107668,
+        0.13962376743340513,
+        0.026
+      ],
+      "target_position": [
+        0.39957157973787205,
+        -0.21938458676352476,
+        0.003
+      ],
+      "cube_final_position": [
+        0.39695693899886453,
+        -0.21506653522764363,
+        0.024959095250994167
+      ],
+      "final_xy_error": 0.005047961495554738,
+      "simulation_time": 9.0739999999997,
+      "failure_reason": null
+    },
+    {
+      "episode": 16,
+      "success": true,
+      "cube_initial_position": [
+        0.4336805923580943,
+        0.12595346886003855,
+        0.026
+      ],
+      "target_position": [
+        0.45913305490736644,
+        -0.10230020566511538,
+        0.003
+      ],
+      "cube_final_position": [
+        0.45495174972023966,
+        -0.10024793017049187,
+        0.024959095250994143
+      ],
+      "final_xy_error": 0.004657805038183278,
+      "simulation_time": 8.391999999999472,
+      "failure_reason": null
+    },
+    {
+      "episode": 17,
+      "success": true,
+      "cube_initial_position": [
+        0.4269436640001182,
+        0.1375011160921194,
+        0.026
+      ],
+      "target_position": [
+        0.4582890025043579,
+        -0.1852889823487298,
+        0.003
+      ],
+      "cube_final_position": [
+        0.45494077214979195,
+        -0.18148249007370312,
+        0.024959095250994167
+      ],
+      "final_xy_error": 0.005069519695895719,
+      "simulation_time": 8.419999999999481,
+      "failure_reason": null
+    },
+    {
+      "episode": 18,
+      "success": true,
+      "cube_initial_position": [
+        0.30616356691358787,
+        0.12114043449253073,
+        0.026
+      ],
+      "target_position": [
+        0.4100418541947341,
+        -0.16646484412956547,
+        0.003
+      ],
+      "cube_final_position": [
+        0.4077472379638003,
+        -0.16159780914991928,
+        0.024959095250994143
+      ],
+      "final_xy_error": 0.005380826436558275,
+      "simulation_time": 9.88399999999997,
+      "failure_reason": null
+    },
+    {
+      "episode": 19,
+      "success": true,
+      "cube_initial_position": [
+        0.4706806146536332,
+        0.09275152802114771,
+        0.026
+      ],
+      "target_position": [
+        0.3881623838364692,
+        -0.1893508994360406,
+        0.003
+      ],
+      "cube_final_position": [
+        0.3858457226812573,
+        -0.186744214803698,
+        0.02495909525099415
+      ],
+      "final_xy_error": 0.003487366295725065,
+      "simulation_time": 8.511999999999512,
+      "failure_reason": null
+    },
+    {
+      "episode": 20,
+      "success": true,
+      "cube_initial_position": [
+        0.3587187515533367,
+        0.15266831206176532,
+        0.026
+      ],
+      "target_position": [
+        0.45798450132777896,
+        -0.09889832236084556,
+        0.003
+      ],
+      "cube_final_position": [
+        0.45395991816079595,
+        -0.0957504396028326,
+        0.024959095250994105
+      ],
+      "final_xy_error": 0.0051094457161377374,
+      "simulation_time": 9.023999999999683,
+      "failure_reason": null
+    }
+  ]
+}

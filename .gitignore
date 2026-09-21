@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+.venv/
+.history/
+MUJOCO_LOG.TXT
+data/*_smoke.npz
